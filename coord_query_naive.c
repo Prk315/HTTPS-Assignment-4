@@ -15,18 +15,40 @@ struct naive_data {
 };
 
 struct naive_data* mk_naive(struct record* rs, int n) {
-  assert(0);
-  // TODO
+  struct naive_data *data = malloc(sizeof(struct naive_data));
+  if (!data) {
+    return NULL;
+  }
+  data->rs = rs;
+  data->n = n;
+  return data;
 }
 
 void free_naive(struct naive_data* data) {
-  assert(0);
-  // TODO
+  free(data);
 }
 
 const struct record* lookup_naive(struct naive_data *data, double lon, double lat) {
-  assert(0);
-  // TODO
+  if (data->n == 0) {
+    return NULL;
+  }
+
+  const struct record *closest = &data->rs[0];
+  double min_dist_sq = (data->rs[0].lon - lon) * (data->rs[0].lon - lon) +
+                       (data->rs[0].lat - lat) * (data->rs[0].lat - lat);
+
+  for (int i = 1; i < data->n; i++) {
+    double dx = data->rs[i].lon - lon;
+    double dy = data->rs[i].lat - lat;
+    double dist_sq = dx * dx + dy * dy;
+
+    if (dist_sq < min_dist_sq) {
+      min_dist_sq = dist_sq;
+      closest = &data->rs[i];
+    }
+  }
+
+  return closest;
 }
 
 int main(int argc, char** argv) {

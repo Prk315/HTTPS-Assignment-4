@@ -1,0 +1,6 @@
+name	alternative_names	osm_type	osm_id	class	type	lon	lat	place_rank	importance	street	city	county	state	country	country_code	display_name	west	south	east	north	wikidata	wikipedia	housenumbers
+Copenhagen	København	R	12345	place	city	12.5604108	55.7026665	15	0.8				Denmark	DK	Copenhagen, Denmark	12.4	55.6	12.7	55.8	Q1748	en:Copenhagen
+Aarhus	Århus	R	67890	place	city	10.2039517	56.1629424	15	0.7				Denmark	DK	Aarhus, Denmark	10.1	56.0	10.3	56.2	Q25319	en:Aarhus
+Odense		R	11111	place	city	10.3833283	55.3959917	15	0.6				Denmark	DK	Odense, Denmark	10.3	55.3	10.5	55.5	Q25331	en:Odense
+Douglas Road		W	45	highway	residential	-1.820557	52.554324	17	0.3	Douglas Road	Wolverhampton	West Midlands	England	United Kingdom	GB	Douglas Road, Wolverhampton, England	-1.83	52.54	-1.81	52.56
+Main Street		W	1337	highway	primary	-0.127758	51.507351	17	0.4	Main Street	London		England	United Kingdom	GB	Main Street, London, England	-0.13	51.50	-0.12	51.51
