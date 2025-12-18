@@ -1,0 +1,24 @@
+# Object files
+*.o
+
+# Executables
+random_ids
+id_query_naive
+id_query_indexed
+id_query_binsort
+coord_query_naive
+
+# Core dumps
+core
+
+# Downloaded dataset
+planet-latest-geonames.tsv
+planet-latest_geonames.tsv
+
+# Compressed dataset
+*.gz
+
+# Editor files
+*~
+*.swp
+.DS_Store
